@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Gallery Page</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            html, body {
+                height:100%;
+            }
+            body {
+                min-height:100%;
+                display:flex;
+                flex-direction:column;
+                
+            }
+            .wrapper {
+                flex:1;
+            }
+            .main-header {
+                background-color: white;
+                height: 100px;
+                width: 70%;
+                padding: 5px 15%;
+            }
+            .main-header h1 {
+                line-height: 50px;
+            }
+                 
+            img.main-logo {
+                    margin-top:0;
+                    float: left;
+                    height:100px;
+
+                }
+            form {
+                float: right;
+                margin:50px auto;
+                }
+            .search {
+                position: absolute;
+                left: 30%;
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+            }
+            .button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+                }
+            .button:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+                }
+                
+            .footer {
+                height: 50px;
+                background-color: #CCC;
+            }
+            span.logo {
+                color: blue;
+            }
+            .copyright {
+                color: blue;
+                font-weight: bold;
+                width: 100%;
+                text-align: center;
+                padding: 15px 0;
+            }
+           
+            section.content-bottom {
+                margin-top: 50px;
+            }
+            .content-bottom {
+                overflow: auto;
+                width: 70%;
+                max-width: 980px;
+                position: relative;
+                margin: 0 auto;
+            }
+            .sidebar {
+                float: left;
+                background-color:white;
+                width: 20%;
+                height: 500px;
+            }
+
+            .main-content {
+                float: right;
+                background-color:white;
+                width: 75%;
+                height: 500px;
+                padding: 0 2% 0 2%;
+                flex-direction: column;
+            }
+
+            .sidebar-links {
+                background-color:paleturquoise;
+            }
+            .sidebar-links li {
+                width: 100%;
+                height: 30px;
+                border: 10px solid white;
+                
+            }
+            .sidebar-links a {
+                display: block;
+                padding: 7px;
+                text-decoration: none;
+                transition-duration: 0.7s;
+            }
+            .sidebar-links a:hover {
+                background-color:aqua;
+                color: #000;
+            }
+			.contact-form {
+                margin: 20px;
+                float: left;
+                width: 500px;
+                height: 500px
+                }
+            .gallery hl{
+			margin: 50px 0 10px 0;
+			}
+			.gallery ul {
+			list-style-type:none;
+			text-align: center;
+			margin-top: 20px;
+			
+			}
+			.gallery li {
+			margin-right:10px;
+			display:inline;
+			}
+			.gallery img {   
+            display: block; 
+			width: 150px;
+			height: 105px;
+			}
+            .descrip {
+                text-align: left;
+            }
+            .table-content{
+                border-spacing: 10px;
+                width: 700px;
+                height: 625px;
+            }
+
+            .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+            }
+
+            .container:hover .overlay {
+            opacity: 1;
+            }
+
+            .text {
+            color: white;
+            font-size: 20px;
+             position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+}
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="main-header box-shadow">
+                <img class="main-logo" src="./title/megavideo.jpg" alt="logo">       
+                    <form>
+                                <input type="text" placeholder="Search..." required>
+                                <input type="button" value="Search">
+                    </form>
+            </header>
+           
+            <section class="content-bottom">
+                <aside class="sidebar">
+                    <ul class="sidebar-links">
+                        <li><a href="C:\git\IS183\Assignments\Assignment04\home\home.html" target="_blank">Home Page</a></li>
+                        <li><a href="C:\git\IS183\Assignments\Assignment04\about\about.html" target="_blank">About Us</a></li>
+                        <li><a href="C:\git\IS183\Assignments\Assignment04\contact us\contactus.html" target="_blank">Contact Us</a></li>
+                        <li><a href="C:\git\IS183\Assignments\Assignment04\gallery\gallery.html" target="_blank">Gallery</a></li>
+                        <li><a href="C:\git\IS183\Assignments\Assignment04\product grid\productgrid.html" target="_blank" >Product Grid</a></li>    
+                    </ul>
+                </aside>
+             <article class="main-content">
+               <div class="gallery">
+						<hl>All Movies</hl>
+                        		<table class="table-content"> 
+								<tr> 
+								<td><img src="../images/gallery/babadook.jpg" alt="flor"></td>
+                                    <div class="overlay"> 
+                                        <div class="text">The Babadook $3.75</div>
+                                    </div>
+								<td><img src="./title/cabin.jpg" alt="f"></td>
+								<td><img src="./title/conjuring.jpg" alt="lor"></td>
+								</tr>
+								<tr>
+								<td><img src="./title/dragon.jpg" alt="flor"></td>
+                                <td><img src="./title/dog.jpg" alt="flor"></td>
+                                <td><img src="./title/monsters.jpg" alt="flor"></td>
+								</tr> 
+                                <tr>
+                                <td><img src="./title/greatwall.jpg" alt="flor"></td>
+                                <td><img src="./title/isle.jpg" alt="flor"></td>
+                                <td><img src="./title/logan.jpg" alt="flor"></td>
+                                </tr>
+                                <tr>
+                                <td><img src="./title/irobot.png" alt="flor"></td>
+                                <td><img src="./title/raone.jpg" alt="flor"></td>
+                                <td><img src="./title/avengers.jpg" alt="flor"></td>
+                                </tr>    
+							</table>
+                    </div>
+                   
+                </article>
+            </section>
+            
+        </div>
+        <footer class="footer box-shadow">
+            <p class="copyright">
+                (c) Created by
+            </p>
+        </footer>
+       
+    </body>
+</html>
