@@ -4,9 +4,7 @@
         <title>Contact Us Page</title>
         <link rel="stylesheet" type="text/css" href="../css/main.css">
          <style>
-    .main-content{
-        background-color: black;
-    }
+
     section.three-column {
         margin-top:30px;
     }
@@ -39,12 +37,7 @@
     table.courses-table tr:nth-child(even) {
         background-color:#CCC;
     }
-    table.courses-table tr:hover {
-        background-color:black;
-    }
-    table.courses-table td, table.courses-table th {
 
-    }
     .about h1, p {
         color: white;
         margin: 15px 0 10px 0;
@@ -57,17 +50,22 @@
     .sidebar {
         border: white;
     }
+    .Info {
+        color: red;
+    }
   
     </style>
     </head>
 
     <body>
         <div class="wrapper">
-            <header class="main-header box-shadow">       
-                    <form>
+            <header class="main-header">    
+                <img class="main-logo" src="../images/gallery/mega.jpeg" alt="logo">       
+                    <form class="searchbar">
                                 <input type="text" placeholder="Search..." required>
                                 <input type="button" value="Search">
                     </form>
+                </div>
             </header>
             <section class="content-bottom three-column">
                 <aside class="sidebar three-column">
@@ -81,9 +79,9 @@
                 </aside>
                 <article class="main-content three-column-content">
                     <div class="contact-form">
-                            <form action="/"/>
-                            <fieldset>
-                                <legend><strong>Personal informatio:</strong></legend>
+                            <form action="C:\git\IS183\Assignments\Assignment04\home\home.html"/>
+                            <fieldset class="Info">
+                                <legend><strong>Personal Information:</strong></legend>
                                 First name:<br>
                                  <input type="text" name="firstname"><br>
                                 Last name:<br>

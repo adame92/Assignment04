@@ -4,9 +4,6 @@
     <title>Mega Video</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <style>
-    .main-content{
-        background-color: black;
-    }
     section.three-column {
         margin-top:30px;
     }
@@ -42,28 +39,31 @@
     table.courses-table tr:hover {
         background-color:black;
     }
-    table.courses-table td, table.courses-table th {
-
-    }
-    .about h1, p {
-        color: white;
-        margin: 15px 0 10px 0;
-    }
     .about img {
-        width: 400px;
-        height: 200px;
+        position: absolute;
+        right: 120px;
+        width: 500px;
+        height: 300px;
         margin: 5px 15px 5px 5px;
     }
     .sidebar {
         border: white;
     }
-  
+    .links {
+        position: absolute;
+        bottom: 10px;
+        right: 60px;
+    }
     </style>
 </head>
 <body>
     <div class="wrapper non-login-page">
-        <header class="main-header box-shadow">
-            <h1 class="logo"><img src="../images/gallery/mega.jpeg" alt="Mega Video"></h1>
+        <header class="main-header">
+            <img class="main-logo" src="../images/gallery/mega.jpeg" alt="logo">       
+                    <form class="searchbar">
+                                <input type="text" placeholder="Search..." required>
+                                <input type="button" value="Search">
+                    </form>
         </header>
         <section class="content-bottom three-column">
             <aside class="sidebar three-column">
@@ -87,7 +87,9 @@
 
                     </p>
                     <img src="../images/gallery/movies.jpg" alt="Profile Pic">
-                    <li><a href="C:\Users\Owner\Desktop\Assignment 04\home\home.html" target="_blank">Back</a></li>
+                    <ul class="links">
+                        <li><a href="C:\git\IS183\Assignments\Assignment04\home\home.html" target="_blank">Back</a></li>
+                    </ul>
                 </div>
             </article>
             

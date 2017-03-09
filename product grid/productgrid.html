@@ -5,7 +5,6 @@
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <style>
     .main-content{
-        background-color: black;
         height: 1577px;
     }
     section.three-column {
@@ -43,9 +42,6 @@
     table.courses-table tr:hover {
         background-color:darkgray;
     }
-    .Classes {
-        color: white;
-    }
     .sidebar {
         border: white;
     }
@@ -54,6 +50,7 @@
         height: 100px;
         margin: 5px 15px 5px 5px;
     }
+    /*
     figcaption.popup {
         padding: 20px;
         background: grey;
@@ -69,28 +66,32 @@
     .popup img {
         width: 400px;
         height: 250px;
-    }
+    }*/
   
     </style>
 </head>
 <body>
     <div class="wrapper non-login-page">
-        <header class="main-header box-shadow">
-            <h1 class="logo"><img src="../images/gallery/mega.jpeg" alt="Mega Video"></h1>
+        <header class="main-header">
+            <img class="main-logo" src="../images/gallery/mega.jpeg" alt="logo">       
+                    <form class="searchbar">
+                                <input type="text" placeholder="Search..." required>
+                                <input type="button" value="Search">
+                    </form>
         </header>
         <section class="content-bottom three-column">
             <aside class="sidebar three-column">
                 <ul class="sidebar-links">
-                    <li><a href="C:\Users\Owner\Desktop\Assignment 04\home\home.html" target="_blank">Home Page</a></li>
-                    <li><a href="C:\Users\Owner\Desktop\Assignment 04\about\about.html" target="_blank">About Us</a></li>
-					<li><a href="C:\Users\Owner\Desktop\Assignment 04\contact us\contact us.html" target="_blank">Contact Us</a></li>
-					<li><a href="C:\Users\Owner\Desktop\Assignment 04\gallery\gallery.html" target="_blank">Gallery</a></li>
-					<li><a href="C:\Users\Owner\Desktop\Assignment 04\product grid\productgrid.html" target="_blank" >Product Grid</a></li>
+                    <li><a href="C:\git\IS183\Assignments\Assignment04\home\home.html" target="_blank">Home Page</a></li>
+                    <li><a href="C:\git\IS183\Assignments\Assignment04\about\about.html" target="_blank">About Us</a></li>
+					<li><a href="C:\git\IS183\Assignments\Assignment04\contact us\contactus.html" target="_blank">Contact Us</a></li>
+					<li><a href="C:\git\IS183\Assignments\Assignment04\gallery\gallery.html" target="_blank">Gallery</a></li>
+					<li><a href="C:\git\IS183\Assignments\Assignment04\product grid\productgrid.html" target="_blank" >Product Grid</a></li>
                 </ul>
             </aside>
             <article class="main-content three-column-content">
                 <div class="gallery">
-                    <h1 class="Classes">Movie Selection</h1>
+                    <h1>Movie Selection</h1>
                     <table class="courses-table">
                         <tr>
                             <th></th>

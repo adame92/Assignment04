@@ -15,11 +15,10 @@
                 flex:1;
             }
             .main-header {
-                background-color: black;
+                background-color: white;
                 height: 70px;
                 width: 70%;
                 padding: 5px 15%;
-                color: blue;
             }
             .main-header h1 {
                 line-height: 50px;
@@ -28,24 +27,19 @@
             }
             .footer {
                 height: 50px;
-                background-color: black;
+                background-color: white;
             }
             span.logo {
                 color: blue;
             }
             .copyright {
-                color: blue;
+                color: red;
                 font-weight: bold;
                 width: 100%;
                 text-align: center;
                 padding: 15px 0;
             }
-            .box-shadow {
-                box-shadow: inset 0px 0px 50px 0px #ABABAB, 1px 1px 5px 1px #242424;
-                -webkit-box-shadow: inset 0px 0px 50px 0px #ABABAB, 1px 1px 5px 1px #242424;
-                -moz-box-shadow: inset 0px 0px 50px 0px #ABABAB, 1px 1px 5px 1px #242424;
-                -o-box-shadow: inset 0px 0px 50px 0px #ABABAB, 1px 1px 5px 1px #242424;
-            }
+            
             .content-top {
                 height: 180px;
                 background-color: transparent;
@@ -54,12 +48,12 @@
 
             .content-bio {
                 position: relative;
-                background-color: black;
+                background-color: white;
                 width: 70%;
                 max-width:980px;
                 height: 180px;
                 margin: 0 auto;
-                color: white;
+                color: black;
             }
             .content-bio img {
                 width: 150px;
@@ -80,30 +74,28 @@
             }
             .sidebar {
                 float: left;
-                background-color: black;
+                background-color: white;
                 width: 25%;
                 height: 500px;
             }
 
             .main-content {
                 float: right;
-                background-color: #aaaaaa;
+                background-color: white;
                 width: 71%;
                 height: 500px;
                 padding: 0 2% 0 2%;
             }
-
             .sidebar-links {
-                background-color: black;
+                background-color: white;
             }
             .sidebar-links li {
                 width: 100%;
                 height: 30px;
-                border: 1px solid #CCC;
-                border-top: 1px solid #FFF;
+                border: 10px solid white;
             }
             .sidebar-links a {
-                color: blue;
+                color: red;
                 display: block;
                 padding: 7px;
                 text-decoration: none;
@@ -124,65 +116,74 @@
 			.gallery li {
 				margin-right:10px;
 				display:inline;
-
 			}
 			.gallery img {
 				width:125px;
 				height:100px;
 			}
-
-            
-            
-             section.one-column {
-            margin-top:30px;
-        }
-        article.main-content.one-column {
-            width:100%;
-            padding:0;
-            background-color:transparent;
-        }
-        div.login-form {
-            padding:20px;
-            width:300px;
-            height:250px;
-            background-color: black;
-            margin:90px auto 0;
-            border-radius:7px;
-            color: blue;
-        }
-        input.login-input {
-            width:100%;
-            padding:5px 2px;
-            border-radius:5px;
-            margin:7px 0;
-        }
-        h1.login-h1 {
-            margin-bottom:15px;
-        }
-        button.login-button {
-            padding:5px 15px;
-            border-radius:7px;
-            background-color:blueviolet;
-            color:#FFF;
-        }
-        p.error-message{
-           display:none;
-            margin-top:10px;
-            padding:5px;
-            width:100%;
-            color:#FFF;
-            background-color:orangered;
-            border:1px solid yellow;
-            border-radius:5px;
-        }
-        div.login-page {
-            background-image:url('../images/gallery/black.jpg');
-            background-size:cover;
-        }
-        div.non-login-page {
-            background-image: url(../images/gallery/black.jpg);
-        }
-        .logo img {
-        width: 400px;
-        height: 71px;
-    }
+            section.one-column {
+                margin-top:30px;
+            }
+            article.main-content.one-column {
+                width:100%;
+                padding:0;
+                background-color:transparent;
+            }
+            div.login-form {
+                padding:20px;
+                width:300px;
+                height:250px;
+                background-color: red;
+                margin:90px auto 0;
+                border-radius:50px;
+                color: white;
+            }
+            input.login-input {
+                width:100%;
+                padding:5px 2px;
+                border-radius:5px;
+                margin:7px 0;
+            }
+            h1.login-h1 {
+                margin-bottom:15px;
+            }
+            button.login-button {
+                padding:5px 15px;
+                border-radius:7px;
+                background-color:red;
+                color:#FFF;
+            }
+            p.error-message{
+                display:none;
+                margin-top:10px;
+                padding:5px;
+                width:100%;
+                color:#FFF;
+                background-color:orangered;
+                border:1px solid yellow;
+                border-radius:5px;
+            }
+            div.login-page { 
+                background-size:cover;
+            }
+            /*
+            div.non-login-page {
+                background-image: url(../images/gallery/black.jpg);
+            }*/
+            .logo img {
+                width: 400px;
+                height: 71px;
+            }
+            img.main-logo {
+                margin-top:0;
+                float: left;
+                height:100px;
+            }
+            .searchbar {
+                float: right;
+                margin:50px auto;
+                }
+            .about h1, p {
+                color: black;
+                margin: 15px 0 10px 0;
+            }

@@ -3,43 +3,8 @@
 
     <head>
         <title>Gallery Page</title>
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
         <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            html, body {
-                height:100%;
-            }
-            body {
-                min-height:100%;
-                display:flex;
-                flex-direction:column;
-                
-            }
-            .wrapper {
-                flex:1;
-            }
-            .main-header {
-                background-color: white;
-                height: 100px;
-                width: 70%;
-                padding: 5px 15%;
-            }
-            .main-header h1 {
-                line-height: 50px;
-            }
-                 
-            img.main-logo {
-                    margin-top:0;
-                    float: left;
-                    height:100px;
-
-                }
-            form {
-                float: right;
-                margin:50px auto;
-                }
             .search {
                 position: absolute;
                 left: 30%;
@@ -60,49 +25,17 @@
                 color:#207cca;
                 }
                 
-            .footer {
-                height: 50px;
-                background-color: #CCC;
-            }
-            span.logo {
-                color: blue;
-            }
-            .copyright {
-                color: blue;
-                font-weight: bold;
-                width: 100%;
-                text-align: center;
-                padding: 15px 0;
-            }
-           
             section.content-bottom {
                 margin-top: 50px;
             }
-            .content-bottom {
-                overflow: auto;
-                width: 70%;
-                max-width: 980px;
-                position: relative;
-                margin: 0 auto;
-            }
+            
             .sidebar {
-                float: left;
-                background-color:white;
                 width: 20%;
-                height: 500px;
             }
 
             .main-content {
-                float: right;
-                background-color:white;
                 width: 75%;
-                height: 500px;
-                padding: 0 2% 0 2%;
                 flex-direction: column;
-            }
-
-            .sidebar-links {
-                background-color:paleturquoise;
             }
             .sidebar-links li {
                 width: 100%;
@@ -110,91 +43,120 @@
                 border: 10px solid white;
                 
             }
-            .sidebar-links a {
-                display: block;
-                padding: 7px;
-                text-decoration: none;
-                transition-duration: 0.7s;
-            }
-            .sidebar-links a:hover {
-                background-color:aqua;
-                color: #000;
-            }
 			.contact-form {
                 margin: 20px;
                 float: left;
                 width: 500px;
                 height: 500px
                 }
-            .gallery hl{
-			margin: 50px 0 10px 0;
-			}
-			.gallery ul {
-			list-style-type:none;
-			text-align: center;
-			margin-top: 20px;
-			
-			}
-			.gallery li {
-			margin-right:10px;
-			display:inline;
-			}
 			.gallery img {   
             display: block; 
 			width: 150px;
 			height: 105px;
 			}
-            .descrip {
-                text-align: left;
-            }
             .table-content{
                 border-spacing: 10px;
                 width: 700px;
                 height: 625px;
             }
-
-            .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            transition: .5s ease;
-            background-color: #008CBA;
+             figcaption.popup {
+                padding: 2px;
+                background: grey;
+                position: absolute;
+                visibility: hidden;
             }
-
-            .container:hover .overlay {
-            opacity: 1;
+            figure.thumbnail:hover figcaption.popup {
+                position: absolute;
+                top: 55px;
+                left:220px;
+                visibility: visible; 
             }
-
-            .text {
-            color: white;
-            font-size: 20px;
-             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-}
+            figure.thumbnail:hover figcaption.popup1 {
+                position: absolute;
+                top: 55px;
+                left:453px;
+                visibility: visible; 
+            }
+            figure.thumbnail:hover figcaption.popup2 {
+                position: absolute;
+                top: 55px;
+                left:682px;
+                visibility: visible; 
+            }
+            figure.thumbnail:hover figcaption.popup2 {
+                position: absolute;
+                top: 55px;
+                left:682px;
+                visibility: visible; 
+            }
+            figure.thumbnail:hover figcaption.popup2 {
+                position: absolute;
+                top: 55px;
+                left:682px;
+                visibility: visible; 
+            }
+            figure.thumbnail:hover figcaption.popup2 {
+                position: absolute;
+                top: 55px;
+                left:682px;
+                visibility: visible; 
+            }
+            figure.thumbnail:hover figcaption.popup2 {
+                position: absolute;
+                top: 55px;
+                left:682px;
+                visibility: visible; 
+            }
+            figure.thumbnail:hover figcaption.popup2 {
+                position: absolute;
+                top: 55px;
+                left:682px;
+                visibility: visible; 
+            }
+            figure.thumbnail:hover figcaption.popup2 {
+                position: absolute;
+                top: 55px;
+                left:682px;
+                visibility: visible; 
+            }
+            figure.thumbnail:hover figcaption.popup2 {
+                position: absolute;
+                top: 55px;
+                left:682px;
+                visibility: visible; 
+            }
+            figure.thumbnail:hover figcaption.popup2 {
+                position: absolute;
+                top: 55px;
+                left:682px;
+                visibility: visible; 
+            }
+            figure.thumbnail:hover figcaption.popup2 {
+                position: absolute;
+                top: 55px;
+                left:682px;
+                visibility: visible; 
+            }
+            .movie{
+                font-weight: bold;
+            }
+            
             
         </style>
     </head>
 
     <body>
         <div class="wrapper">
-            <header class="main-header box-shadow">
-                <img class="main-logo" src="./title/megavideo.jpg" alt="logo">       
-                    <form>
+            <header class="main-header">
+                <img class="main-logo" src="../images/gallery/mega.jpeg" alt="logo">       
+                    <form class="searchbar">
                                 <input type="text" placeholder="Search..." required>
                                 <input type="button" value="Search">
                     </form>
             </header>
            
-            <section class="content-bottom">
-                <aside class="sidebar">
+            <section class="content-bottom three-column">
+                <aside class="sidebar three-column">
                     <ul class="sidebar-links">
                         <li><a href="C:\git\IS183\Assignments\Assignment04\home\home.html" target="_blank">Home Page</a></li>
                         <li><a href="C:\git\IS183\Assignments\Assignment04\about\about.html" target="_blank">About Us</a></li>
@@ -203,32 +165,51 @@
                         <li><a href="C:\git\IS183\Assignments\Assignment04\product grid\productgrid.html" target="_blank" >Product Grid</a></li>    
                     </ul>
                 </aside>
-             <article class="main-content">
+             <article class="main-content three-column-content">
                <div class="gallery">
-						<hl>All Movies</hl>
+						<hl class="movie">All Movies</hl>
                         		<table class="table-content"> 
 								<tr> 
-								<td><img src="../images/gallery/babadook.jpg" alt="flor"></td>
-                                    <div class="overlay"> 
-                                        <div class="text">The Babadook $3.75</div>
-                                    </div>
-								<td><img src="./title/cabin.jpg" alt="f"></td>
-								<td><img src="./title/conjuring.jpg" alt="lor"></td>
+
+                                    <td><br>
+                                    <figure class="thumbnail"><img src="../images/gallery/babadook.jpg" alt="flor">
+                                    <figcaption class="popup"><img src="../images/gallery/babadook.jpg" alt="flor">
+                                        <br><p>The Babadook $3.75</p>
+                                    </figcaption>
+                                    </figure>
+                                    </td>
+                                    
+                                    <td><br>
+                                    <figure class="thumbnail"><img src="../images/gallery/cabin.jpg" alt="f">
+                                    <figcaption class="popup popup1"><img src="../images/gallery/cabin.jpg" alt="f">
+                                        <br><p>adsf asdf</p>
+                                    </figcaption>
+                                    </figure>                                    
+                                    </td>
+
+                                    <td><br>
+                                    <figure class="thumbnail"><img src="../images/gallery/conjuring.jpg" alt="lor">
+                                    <figcaption class="popup popup2"><img src="../images/gallery/conjuring.jpg" alt="lor">
+                                        <br><p>asdf asdfa</p>
+                                    </figcaption>
+                                    </figure>
+                                    </td>
+
 								</tr>
 								<tr>
-								<td><img src="./title/dragon.jpg" alt="flor"></td>
-                                <td><img src="./title/dog.jpg" alt="flor"></td>
-                                <td><img src="./title/monsters.jpg" alt="flor"></td>
+								<td><img src="../images/gallery/dragon.jpg" alt="flor"></td>
+                                <td><img src="../images/gallery/dog.jpg" alt="flor"></td>
+                                <td><img src="../images/gallery/monsters.jpg" alt="flor"></td>
 								</tr> 
                                 <tr>
-                                <td><img src="./title/greatwall.jpg" alt="flor"></td>
-                                <td><img src="./title/isle.jpg" alt="flor"></td>
-                                <td><img src="./title/logan.jpg" alt="flor"></td>
+                                <td><img src="../images/gallery/greatwall.jpg" alt="flor"></td>
+                                <td><img src="../images/gallery/isle.jpg" alt="flor"></td>
+                                <td><img src="../images/gallery/logan.jpg" alt="flor"></td>
                                 </tr>
                                 <tr>
-                                <td><img src="./title/irobot.png" alt="flor"></td>
-                                <td><img src="./title/raone.jpg" alt="flor"></td>
-                                <td><img src="./title/avengers.jpg" alt="flor"></td>
+                                <td><img src="../images/gallery/irobot.png" alt="flor"></td>
+                                <td><img src="../images/gallery/raone.jpg" alt="flor"></td>
+                                <td><img src="../images/gallery/avengers.jpg" alt="flor"></td>
                                 </tr>    
 							</table>
                     </div>
@@ -239,7 +220,7 @@
         </div>
         <footer class="footer box-shadow">
             <p class="copyright">
-                (c) Created by
+                (c) Created by M.A.Y.A. (Our initials)
             </p>
         </footer>
        
