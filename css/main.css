@@ -87,7 +87,7 @@
                 padding: 0 2% 0 2%;
             }
             .sidebar-links {
-                background-color: white;
+                background-color: firebrick;
             }
             .sidebar-links li {
                 width: 100%;
@@ -95,14 +95,14 @@
                 border: 10px solid white;
             }
             .sidebar-links a {
-                color: red;
+                color: black;
                 display: block;
                 padding: 7px;
                 text-decoration: none;
                 transition-duration: 0.7s;
             }
             .sidebar-links a:hover {
-                background-color: #CCC;
+                background-color: darkred;
                 color: #000;
             }
 			.gallery h1 {
